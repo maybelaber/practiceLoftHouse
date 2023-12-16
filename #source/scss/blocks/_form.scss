@@ -1,0 +1,39 @@
+.form__input {
+    padding: 12px;
+    height: 50px;
+
+    text-align: center;
+    font-size: 14px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.2s ease-in;
+
+    &::placeholder {
+        color: $placeholder;
+    }
+
+    &:focus {
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+}
+
+.form__text {
+    align-self: center;
+
+    color: $muted;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.23077;
+
+    @include mediaTablet {
+        order: 1;
+    }
+}
+
+.form__btn {
+    padding: 10px;
+    background-color: $accent;
+
+    height: 50px;
+    font-weight: 700;
+}

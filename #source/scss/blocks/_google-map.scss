@@ -1,0 +1,30 @@
+.gm-style-mtc, 
+.gm-svpc {
+    display: none !important;
+}
+
+.gm-style-cc, 
+.gmnoprint {
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.map:hover .gm-style-cc, 
+.map:hover .gmnoprint {
+    opacity: 1;
+}
+
+/* Baloon */
+
+.balloon {
+    color: $dark;
+    font-size: 16px;
+}
+
+.balloon__contacts a {
+    color: $dark;
+
+    &:hover {
+        color: $accent;
+    }
+}

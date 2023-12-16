@@ -1,0 +1,28 @@
+.info {
+    position: relative;
+    padding: 0 0 0 35px;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 21px;
+        height: 21px;
+    }
+}
+
+.info--address {
+    text-align: right;
+
+    &::before {
+        background: url(./../img/header/map.svg);
+    }
+}
+
+.info--phone {
+    &::before {
+        background: url(./../img/header/phone.svg);
+    }
+}
